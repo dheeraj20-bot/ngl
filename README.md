@@ -30,19 +30,23 @@ Stranger is a project where people can message anonymously, similar to ngl. It i
    ```bash
    git clone https://github.com/your-repository-url.git
 
-cd your-repository
-npm install
+   ```bash
+   cd your-repository
 
-npm run dev
+   ```bash   
+   npm install
+    
+   ```bash
+   npm run dev
 
 and Don't forget to setup env variables
 
-#Contributing
+##Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests for any improvements or features you'd like to see.
 
-#Acknowledgements
+##Acknowledgements
 
-This project was inspired by ngl.
-Special thanks to the maintainers and contributors of the technologies used in this project.
+-This project was inspired by ngl.
+-Special thanks to the maintainers and contributors of the technologies used in this project.
 
