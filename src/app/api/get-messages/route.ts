@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "../auth/[...nextauth]/options";
 import { User } from "next-auth";
 import mongoose from "mongoose";
+import { log } from "console";
 
 export async function GET(request: Request) {
     await dbConnect()
@@ -49,9 +50,15 @@ export async function GET(request: Request) {
         },
         {status:200})
 
-    } catch (error) {
+     } catch (error) {
+        console.log("Failed to get messages");
+        return  Response.json(
+            {   
+                success:false,
+                message:"Unauthorized",
+            },
+            {status:500})
         
     }
-    
-
 }
+
