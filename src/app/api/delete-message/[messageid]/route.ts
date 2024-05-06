@@ -25,7 +25,6 @@ export async function DELETE(request: Request,{params}:{params:{messageid:string
 
   console.log(_user._id);
   
-
   try {
     const updateResult = await UserModel.updateOne(
       {_id:_user._id},

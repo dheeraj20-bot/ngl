@@ -65,7 +65,7 @@ const SignInPage = () => {
         <h1 className="text-4xl text-primary font-extrabold tracking-tight 
          lg:text-5xl mb-6
          ">Join Stranger</h1>
-         <p className="mb-4 font-medium ">Let's Start your Journey</p>
+         <p className="mb-4 font-medium ">Lets Start your Journey</p>
         </div>
         <Form {...form}>
          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
